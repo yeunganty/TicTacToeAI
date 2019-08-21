@@ -1,4 +1,5 @@
 #TicTacToe
+
 A TicTacToe game featuring a single and multiplayer modes, score counting, and an unbeatable bot. 
 
 Features:
@@ -7,4 +8,4 @@ Features:
 - Computer bot using Minimax algorithm
 - Score counting 
 
-![](images/basic-gui.png)
+![](basic-gui.png)
