@@ -14,9 +14,7 @@ public class TicTacToe {
     private static int botScore;
 
 
-
     public static boolean botGame;
-
 
     public TicTacToe() {
         newGame();
@@ -45,7 +43,6 @@ public class TicTacToe {
         }
     }
 
-
     public List<Integer> getEmptySpots() {
         List<Integer> emptySpots = new ArrayList<>();
         for (int i=0; i<9;i++) {
@@ -55,8 +52,6 @@ public class TicTacToe {
         }
         return emptySpots;
     }
-
-
 
     public boolean move(int position) {
         if (validGameState()) {

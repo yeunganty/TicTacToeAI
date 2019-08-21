@@ -18,7 +18,7 @@ import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class mainUIController implements Initializable {
+public class mainUIController implements   Initializable {
 
 
     @FXML
@@ -30,7 +30,6 @@ public class mainUIController implements Initializable {
     Label P2;
     @FXML
     Label notification;
-
 
     private TicTacToe game;
 
@@ -46,7 +45,6 @@ public class mainUIController implements Initializable {
         initializeSymbols();
         setupGridPane();
         setupLabels();
-
     }
 
     private void initializeSymbols() {
@@ -109,7 +107,6 @@ public class mainUIController implements Initializable {
         }
 
     }
-
 
     private void updateGame(Label label) {
         String position = label.getId();
@@ -176,5 +173,12 @@ public class mainUIController implements Initializable {
         TicTacToe.setP1Score(0);
         TicTacToe.setP2Score(0);
         ttt.setScene();
+    }
+
+    public void quitGame(ActionEvent actionEvent) {
+        TicTacToeJavaGUI.closeStage();
+        TicTacToe.setBotScore(0);
+        TicTacToe.setP1Score(0);
+        TicTacToe.setP2Score(0);
     }
 }

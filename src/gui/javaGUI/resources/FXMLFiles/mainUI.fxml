@@ -16,12 +16,12 @@
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
-        <Menu mnemonicParsing="false" text="File">
+        <Menu mnemonicParsing="false" text="Settings">
           <items>
             <MenuItem mnemonicParsing="false" text="New Game" onAction="#setNewGame"/>
               <MenuItem mnemonicParsing="false" text="Play Against Bot" onAction="#setPlayBot" />
               <MenuItem mnemonicParsing="false" text="Play Against A Friend" onAction="#setPlayFriend" />
-            <MenuItem mnemonicParsing="false" text="Quit" />
+            <MenuItem mnemonicParsing="false" text="Quit" onAction="#quitGame"/>
 
           </items>
         </Menu>
